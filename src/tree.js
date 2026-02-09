@@ -16,6 +16,7 @@ export class knight {
   ];
 
   levelOrderFindTarget(startnode, targetnode) {
+    this.#treeValues = [];
     if (!startnode || !targetnode) return;
 
     let queue = new Queue();
