@@ -1,0 +1,35 @@
+{
+  "name": "odin-knight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "babel.config.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack ",
+    "dev": "webpack serve ",
+    "deploy": "npm run build && git add dist -f && git commit -m \"Deployment commit\" && git subtree push --prefix dist origin gh-pages",
+    "start": "npm run build && npm run dev",
+    "commit": "git add . && git commit -m \"commit\" && git push",
+    "watch" : "jest --watch ./src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reverse-smartass/odin-knight.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+   "devDependencies": {
+    "@babel/preset-env": "^7.28.6",
+    "case-anything": "^2.1.13",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.6.4",
+    "jest-cli": "^29.6.4"
+  },
+  "bugs": {
+    "url": "https://github.com/reverse-smartass/odin-knight/issues"
+  },
+  "homepage": "https://github.com/reverse-smartass/odin-knight#readme"
+}
