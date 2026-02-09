@@ -1,9 +1,9 @@
 export class node {
-  constructor(value) {
-    this.value = value;
-    this.parent = null;
-    this.rightchild = null;
-    this.leftchild = null;
+  constructor(row, column, parent = null) {
+    this.moves = [];
+    this.row = row;
+    this.column = column;
+    this.parent = parent;
   }
 
   isLeaf() {
